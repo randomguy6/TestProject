@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Survey Take: 15</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href = "http://computesolutions.tech"><img src="LogoName.png" alt="Its just the company name" title="Compute Solutions"><a>
+        <script src="WebSockChanger.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p>Beta test Take: 15</p>
+        <h2>Please fill out this form.</h2>
+        <a href='#' onclick='showForm'>Add a server</a>
+        <form id = '_form'>
+            <h3>Add Server</h3>
+            <span>Processor Speed:<br>
+            <input type = 'text' name = '_processorSpeed'></span>
+            
+            <span>Processor Core Count:<br>
+            <input type = 'radio' name = '_processorCore' value = "1">1<br>
+            <input type = 'radio' name = '_processorCore' value = "2">2<br>
+            <input type = 'radio' name = '_processorCore' value = "4">4<br></span>
+            
+            <span>Ram Speed:<br>
+            <input type = 'text' name = '_ramSpeed'></span>
+            
+            <span>Ram Capacity:<br>
+            <select>
+                <option name = '_ramCap' value = "12">12</option>
+                <option name = '_ramCap' value = "16">16</option>
+                <option name = '_ramCap' value = "20">20</option>
+                <option name = '_ramCap' value = "24">24</option>
+                <option name = '_ramCap' value = "28">28</option>
+                <option name = '_ramCap' value = "32">32</option>
+            </select>
+            
+            <span>Network Type:<br>
+            <input type = 'text' value = '_type'></span>
+            <input type = 'submit' value = 'Submit Survey' onclick='submitForm'>
+            <input type = "reset">
+            </form>
+        <p>Some functions may not work. Still a work in progress</p>
+        <div id = 'servers'>
+            </div>
+    </body>
+</html>
